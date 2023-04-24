@@ -47,7 +47,7 @@ public class MyRestController {
         return employee;
     }
 
-    @DeleteMapping("/employee/{id}")
+    @DeleteMapping("/employees/{id}")
     public String deleteEmployee(@PathVariable int id) {
 
         Employee employee = employeeService.getEmployee(id);
